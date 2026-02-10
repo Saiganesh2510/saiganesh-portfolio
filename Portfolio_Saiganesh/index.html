@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saiganesh Dharna | Software Developer</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+  <style>
+    .project-card {
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+  
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+    }
+    .project-card1{
+        cursor:pointer;
+        transition:all
+    }
+
+    .project-card1:hover{
+        transform:translateY(0px) scale(1.02);
+        box-shadow: 0 14px 35px rgb(96, 135, 224);
+    }
+  </style>
+
+  <!-- Font Awesome CDN -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<style>
+.footer-link {
+  color: #374151;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #534eec;
+}
+
+.dark .footer-link {
+  color: #d1d5db;
+}
+
+.dark .footer-link:hover {
+  color: #60a5fa;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: #e5e7eb;
+  color: #111827;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #eb7125;
+  color: #383535;
+  transform: translateY(-3px);
+}
+
+.dark .social-icon {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.dark .social-icon:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.Card:hover{
+    background: #e46c34;
+  transition: all 
+}
+</style>
+
+
+<style>
+    .social-btn {
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 500;
+      background: #e5e7eb;
+      color: #111827;
+      transition: all 0.3s ease;
+    }
+  
+    .social-btn:hover {
+      background: #2563eb;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  
+    .dark .social-btn {
+      background: #374151;
+      color: #e5e7eb;
+    }
+  
+    .dark .social-btn:hover {
+      background: #3b82f6;
+      color: #ffffff;
+    }
+
+  </style>
+
+  
+</head>
+
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300" id="body">
+
+<!-- NAVBAR -->
+<nav class="bg-white dark:bg-gray-900 shadow fixed w-full z-10 transition">
+  <div class="max-w-10xl mx-auto px-2 py-auto flex justify-between items-center">
+    <a href="#about"><img src="https://img.sanishtech.com/u/5a064ba28f6136472defa411b3fb2b2f.png" alt="logo" class="w-auto h-20 rounded-full"> </a>
+
+    <div class="flex items-center space-x-6">
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#certificates" class="hover:text-blue-600">Certifications</a>
+        <a href="mailto:saiganeshdharna@gmail.com" class="hover:text-blue-600">Contact</a>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button onclick="toggleDarkMode()"
+        class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded text-sm">
+        🌙
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-28 pb-20 bg-gradient-to-r from-orange-600 to-indigo-700 text-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Saiganesh Dharna 👋</h2>
+      <p class="text-lg mb-6">
+        QA Engineer & Software Developer with strong experience in
+        testing, SQL validation, and Java-based applications.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="mailto:saiganeshdharna@gmail.com"
+           class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold project-card1">
+          Contact Me
+        </a>
+        
+
+        <!-- Resume Button -->
+        <a href="assets/Resume_SaiganeshDharna.pdf" view
+           class="border border-white px-6 py-3 rounded-lg font-semibold project-card1">
+         View Resume
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center md:justify-end">
+        <img src="https://media.licdn.com/dms/image/v2/D5635AQFSIFBZheQ3Zg/profile-framedphoto-shrink_400_400/B56ZUpOKhhHsAc-/0/1740153334332?e=1771264800&v=beta&t=uarGDgBlytJK2q8ULTbU8puKL23yrvqgJJns4t4H2oY"class="w-72 h-72 object-cover rounded-full border-4 border-white shadow-lg">
+      </div>      
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-16 dark:bg-gray-900 dark:text-gray-200">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="leading-relaxed">
+        Detail-oriented QA Engineer at <strong>KshiyaRise Technologies Private Limited</strong>, with hands-on experience in manual testing, test case design, defect reporting, and requirement validation across multiple real-time projects involving web and communication platforms.<br><br>
+        Strong understanding of SDLC and STLC, with practical exposure to functional, regression, integration, and UI testing. Actively involved in validating software developed using Java-based technologies and performing backend testing using SQL and PL/SQL to ensure data accuracy and business logic correctness.<br><br>
+        Skilled in identifying edge cases, documenting clear and reproducible defects, and collaborating closely with developers to deliver high-quality releases. A quick learner with strong analytical thinking, communication, and teamwork abilities, eager to grow in software testing, development, and database validation roles.
+            </p>  
+  </div>
+</section>
+<section id="about" class="py-16 dark:bg-gray-900 dark:text-gray-200">
+    <div class="max-w-5xl mx-auto px-5">
+        <h2 class="text-3xl font-bold mb-6">Professional Experience</h2>
+        <p class="leading-relaxed">
+            <strong>Quality Assurance Engineer</strong><br>
+<strong>KshiyaRise Technologies Private Limited | Hyderabad | Nov 2025 – Present</strong><br>
+
+Working as a QA Engineer with hands-on experience in testing real-time web and mobile applications across multiple domains including booking, logistics, healthcare, and communication platforms. Actively involved in ensuring software quality through structured test execution and defect management.<br><br>
+
+Contributed to testing four major platforms — Cabinzo, BookMySand, HMS, and MCC — performing functional, UI, regression, and integration testing across web, Android, and iOS applications. Validated complete user workflows such as booking, order management, authentication, billing, and messaging services.<br><br>
+
+Experienced in identifying edge cases, documenting clear and reproducible defects, and collaborating closely with development teams to verify fixes and support smooth releases. Demonstrated strong understanding of SDLC and STLC, with a focus on delivering reliable and user-friendly software solutions.
+
+        </p><br>
+        <p>
+            <strong>Full Stack Java Development Trainee</strong><br>
+<strong>NareshIT( i Technologies), Hyderabad | June 2025 – Dec 2025</strong><br>
+During my training at Naresh i Technologies, I gained hands-on experience in Core and Advanced Java, including JDBC, Servlets, JSP, Spring Boot, and Hibernate, with a strong focus on understanding both development and quality assurance practices. I developed console-based and web applications following the MVC architecture and standard coding principles.<br><br>
+
+I actively practiced SDLC and STLC processes, working across requirement analysis, design, development, testing, and deployment phases. Along with development activities, I performed manual QA testing on developed modules to validate functionality, UI behavior, business logic, and data flow. I designed test scenarios and test cases based on functional requirements and executed SQL queries for backend data validation.<br><br>
+
+I was involved in defect identification, documentation, and tracking, gaining exposure to debugging, error handling, and performance considerations from both a tester’s and developer’s perspective. I also used Git/GitHub for basic version control and collaborated on improving code quality and test coverage. This experience strengthened my ability to work closely with developers while ensuring high-quality, reliable software delivery.
+
+        </p>
+    </div>
+</section>
+
+<!--EDUCATION-->
+<section id="education" class="py-16 bg-gray-100 dark:bg-gray-800 dark:text-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Education</h2>
+      <div class="grid md:grid-cols-1 gap-6">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+      <strong>Bachelor of Computer Application<br>
+        <img src="assets/vaag.png" alt="logo" class="w-auto h-20 rounded-full">Vaagdevi Degree and PG College | Hanamkonda, Telangana <br> 2022 – 2025
+        </strong><br><br>
+        <strong>Intermediate (MPC)<br>
+            <img src="assets/shine.png" alt="logo" class="w-auto h-20 rounded-full">Shine Junior College | Hanamkonda, Telangana <br> 2020 – 2022
+            </strong>
+        </div>
+      </div>
+    </div>  
+<!-- SKILLS -->
+<section id="skills" class="py-16 bg-gray-100 dark:bg-gray-800 dark:text-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+        <h3 class="font-semibold mb-3">QA & Testing</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Manual Testing (Functional, Regression, Integration, System Testing)</li>
+          <li>SDLC & STLC</li>
+          <li>Test Case Design & Test Scenario Writing</li>
+          <li>Defect Reporting & Tracking</li>
+          <li>Requirement Analysis</li>
+          <li>Basic Automation Knowledge (Selenium WebDriver – concepts level)</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+        <h3 class="font-semibold mb-3">Programming</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Java</li>
+          <li>HTML,<br> CSS,<br> JavaScript</li>
+          <li>C, C++</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+        <h3 class="font-semibold mb-3">Tools & Cloud</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Oracle(SQL,PL/SQL),<br> MySQL,<br> JDBC</li>
+          <li>Git & GitHub</li>
+          <li>AWS, Azure DevOps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-16 dark:bg-gray-900 dark:text-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Project Card -->
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/sandbazzar.png" class="w-full h-80 object-100">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">BookMySand Platform</h3>
+          <p class="text-sm mt-2">
+            • Tested BookMySand web platform, customer app, and driver app for functional, UI, accessibility, and regression issues.<br>
+            • Validated key workflows: booking, login, order tracking, driver assignments, and payments.<br>
+            • Reported and verified defects with detailed steps and collaborated with developers for fixes            
+          </p>
+        </div>
+      </div>
+
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/cabinzo.jpg" class="w-full h-80 object-100">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">Cabinzo Platform</h3>
+          <p class="text-sm mt-2">
+            • Tested the Cabinzo web and mobile applications (Android & iOS) for functional, UI, and regression issues.<br>
+            • Validated booking workflows, form validations, and navigation flows.<br>
+            • Reported and verified bugs related to UI, usability, and business logic.           
+          </p>
+        </div>
+      </div>
+
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/sms-and-email-marketing.png" class="w-full h-80 object-100">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">MCC SMS & Email Platform</h3>
+          <p class="text-sm mt-2">
+            • Tested MCC SMS & Email platform for admin and client portals.<br>
+            • Validated DLT-approved SMS templates, SMTP email delivery, and SMPP SMS flows.<br>
+            • Executed functional and regression testing and reported defects with clear steps.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/HMS.jpg" class="w-full h-80 object-100">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">Hospital Management System</h3>
+          <p class="text-sm mt-2">
+            • Tested HMS web application for patient, doctor, appointment, and billing workflows.<br>
+            • Validated role-based access, form validations, and data accuracy.<br>
+            • Reported and verified defects through functional and regression testing.
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/income&EMI.jpg" class="w-full h-auto object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">Income Tax & EMI Calculator</h3>
+          <p class="text-sm mt-2">
+            • Analyzed feature requirements and validated tax & EMI calculation logic.<br>
+• Designed test cases covering boundary values, edge cases, and negative scenarios.<br>
+• Performed UI validation and output verification for calculation reports.<br>
+• Identified defects in calculation logic and collaborated on fixes.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+        <img src="assets/ATM.png.webp" class="w-full h-auto object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-lg">ATM Transaction Simulator</h3>
+          <p class="text-sm mt-2">
+            • Tested console-based banking operations such as withdrawal, deposit, PIN change.<br>
+            • Verified transaction accuracy using SQL queries.<br>
+            • Documented defects related to balance updates and validation issues.<br>
+            • Prepared test scenarios and defect logs for each module.
+            
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section>
+    <!-- CERTIFICATIONS  -->
+<section id="certificates" class="py-16 dark:bg-gray-900 dark:text-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Certifications</h2>
+  
+      <div class="grid md:grid-cols-2 gap-8">
+  
+        <!-- Project Card -->
+  
+        <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+          <img src="assets/EDU.jpg" class="w-full h-50 object-100">
+          <div class="p-6">
+            <h3 class="font-semibold text-lg">Artificial Intelligence & Machine Learning Internship<br>India Edu Program | July 2024 – Sep 2024</h3>
+            <p class="text-sm mt-2">
+                • Learned core AI/ML concepts and model workflows.<br>
+
+                • Gained exposure to data analysis and validation principles.<br>
+            
+                • Understood quality and testing considerations in AI/ML systems.          
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded shadow overflow-hidden project-card">
+            <img src="assets/ai&ml.jpg" class="w-full h-50 object-100">
+            <div class="p-6">
+              <h3 class="font-semibold text-lg">Artificial Intelligence & Machine Learning Training <br> SETWIN | Jan 2022 – Jan 2023</h3>
+              <p class="text-sm mt-2">
+                • Learned fundamentals of AI & ML concepts.<br>
+
+                • Gained exposure to data analysis and validation basics.<br>
+                
+                • Strengthened analytical and problem-solving skills.        
+              </p>
+            </div>
+          </div>
+</section>
+<footer class="bg-gray-100 dark:bg-gray-900 dark:text-gray-300">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+  
+      <!-- Top Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  
+        <!-- Left: Quick Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            Quick Links
+          </h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="mailto:saiganeshdharna@gmail.com" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="md:text-right">
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            Contact
+          </h3>
+          <p class="mb-2">📧 <strong><a href="mailto:saiganeshdharna@gmail.com" class="Card">saiganeshdharna@gmail.com</a></strong></p>
+          <p class="mb-2">📍 Hyderabad, Telangana</p>
+          <p class="mb-2">📞 +91 8520896231</p>
+        </div>
+  
+      </div>
+  
+      <!-- Divider -->
+      <div class="border-t border-gray-300 dark:border-gray-700 my-8"></div>
+  
+      <!-- Bottom Row -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+  
+        <!-- Copyright -->
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          © 2026 Saiganesh Dharna. All rights reserved.
+        </p>
+  
+        <!-- Social Icons -->
+        <div class="flex space-x-4">
+  
+          <a href="https://www.instagram.com/saiganeshdharna?igsh=N3J4bzloOGV5dnZ5&utm_source=qr" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/SaiganeshDharna" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+  
+          <a href="https://github.com/Saiganesh2510" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+  
+          <a href="https://twitter.com/@saiganeshdharna" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+  
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+<!-- JAVASCRIPT -->
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
+
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href'))
+        .scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+
+</body>
+</html>
